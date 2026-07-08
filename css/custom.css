@@ -61,7 +61,7 @@ a {
 
 header{
     background:#d0e6fc;
-    min-height:340px;
+    min-height:400px;
     display:flex;
     align-items:center;
 }
@@ -83,7 +83,7 @@ header h1{
 header p{
     max-width:550px;
     margin:0 auto;
-    font-size:1.1rem;
+    font-size:1.17rem;
     line-height:1.7;
 }
 
