@@ -5,62 +5,66 @@ const courses = [
         title: "Macroeconomics II",
         image: "assets/icon/542002.png",
         password: "001",
-        description:
-            "Lecture Notes, Learning Materials and Assignments.",
+        description: "Lecture Notes, Learning Materials and Assignments.",
+        weeks: [
+            {lecture:{title:"Lecture 1", url:"assets/542002/Ch-1.pdf"}, video:{title:"Video 1",url:"https://youtube.com/..."},exercise:{title:"Exercise 1", url:"assets/542002/ex1.pdf"}},
+            {lecture:{title:"Lecture 2", url:"assets/542002/Ch-2.pdf"}, video:{title:"Video 2",url:"https://youtube.com/..."},exercise:{title:"Exercise 2", url:"assets/542002/ex2.pdf"}},
+            {lecture:{title:"Lecture 3", url:"assets/542002/Ch-3.pdf"}, video:{title:"Video 3",url:"https://youtube.com/..."},exercise:{title:"Exercise 3", url:"assets/542002/ex3.pdf"}},
+            {lecture:{title:"Lecture 4", url:"assets/542002/Ch-4.pdf"}, video:{title:"Video 4",url:"https://youtube.com/..."},exercise:{title:"Exercise 4", url:"assets/542002/ex4.pdf"}},
+            {lecture:{title:"Lecture 5", url:"assets/542002/Ch-5.pdf"}, video:{title:"Video 5",url:"https://youtube.com/..."},exercise:{title:"Exercise 5", url:"assets/542002/ex5.pdf"}},
+            {lecture:{title:"Lecture 6", url:"assets/542002/Ch-6.pdf"}, video:{title:"Video 6",url:"https://youtube.com/..."},exercise:{title:"Exercise 6", url:"assets/542002/ex6.pdf"}},
+            {lecture:{title:"Lecture 7", url:"assets/542002/Ch-7.pdf"}, video:{title:"Video 7",url:"https://youtube.com/..."},exercise:{title:"Exercise 7", url:"assets/542002/ex7.pdf"}},
+            {lecture:{title:"Lecture 8", url:"assets/542002/Ch-8.pdf"}, video:{title:"Video 8",url:"https://youtube.com/..."},exercise:{title:"Exercise 8", url:"assets/542002/ex8.pdf"}},
+            {lecture:{title:"Lecture 9", url:"assets/542002/Ch-9.pdf"}, video:{title:"Video 9",url:"https://youtube.com/..."},exercise:{title:"Exercise 9", url:"assets/542002/ex9.pdf"}},
+            {lecture:{title:"Lecture 10", url:"assets/542002/Ch-10.pdf"}, video:{title:"Video 10",url:"https://youtube.com/..."},exercise:{title:"Exercise 10", url:"assets/542002/ex10.pdf"}}
+            ],
+        extraCard: {title: "📢 Announcement", text: "Midterm Exam : ... August 2026", button: "Schedule", url: "assets/542002/midterm.pdf"}},
 
-        materials: [
-            {title: "Lecture 1", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-1.pdf", target: "_blank"},
-            {title: "Lecture 2", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-2.pdf", target: "_blank"},
-            {title: "Lecture 3", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-3.pdf", target: "_blank"},
-            {title: "Lecture 4", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-4.pdf", target: "_blank"},
-            {title: "Lecture 5", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-5.pdf", target: "_blank"},
-            {title: "Lecture 6", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-6.pdf", target: "_blank"},
-            {title: "Lecture 7", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-7.pdf", target: "_blank"},
-            {title: "Lecture 8", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-8.pdf", target: "_blank"},
-            {title: "Lecture 9", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-9.pdf", target: "_blank"},
-            {title: "Lecture 10", icon: "fa-solid fa-file-pdf", url: "assets/542002/Ch-10.pdf", target: "_blank"},
-            {title: "📚 Learning Material", url: "https://drive.google.com/", target: "_blank"}
-        ]
-    },
 
 
     {
         code: "IN 542003",
-        title: "Statistics for Economists",
+        title: "Introduction to Statatic for Economists",
         image: "assets/icon/542003.png",
-        password: "nkc",
-        description:
-            "สถิติสำหรับนักเศรษฐศาสตร์",
+        password: "002",
+        description: "Lecture Notes, Learning Materials and Assignments.",
+        weeks: [
+            {lecture:{title:"Lecture 1", url:"assets/542003/Ch-1.pdf"}, video:{title:"Video 1",url:"https://youtube.com/..."},exercise:{title:"Exercise 1", url:"assets/542003/ex1.pdf"}},
+            {lecture:{title:"Lecture 2", url:"assets/542003/Ch-2.pdf"}, video:{title:"Video 2",url:"https://youtube.com/..."},exercise:{title:"Exercise 2", url:"assets/542003/ex2.pdf"}},
+            {lecture:{title:"Lecture 3", url:"assets/542003/Ch-3.pdf"}, video:{title:"Video 3",url:"https://youtube.com/..."},exercise:{title:"Exercise 3", url:"assets/542003/ex3.pdf"}},
+            {lecture:{title:"Lecture 4", url:"assets/542003/Ch-4.pdf"}, video:{title:"Video 4",url:"https://youtube.com/..."},exercise:{title:"Exercise 4", url:"assets/542003/ex4.pdf"}},
+            {lecture:{title:"Lecture 5", url:"assets/542003/Ch-5.pdf"}, video:{title:"Video 5",url:"https://youtube.com/..."},exercise:{title:"Exercise 5", url:"assets/542003/ex5.pdf"}},
+            {lecture:{title:"Lecture 6", url:"assets/542003/Ch-6.pdf"}, video:{title:"Video 6",url:"https://youtube.com/..."},exercise:{title:"Exercise 6", url:"assets/542003/ex6.pdf"}},
+            {lecture:{title:"Lecture 7", url:"assets/542003/Ch-7.pdf"}, video:{title:"Video 7",url:"https://youtube.com/..."},exercise:{title:"Exercise 7", url:"assets/542003/ex7.pdf"}},
+            {lecture:{title:"Lecture 8", url:"assets/542003/Ch-8.pdf"}, video:{title:"Video 8",url:"https://youtube.com/..."},exercise:{title:"Exercise 8", url:"assets/542003/ex8.pdf"}},
+            {lecture:{title:"Lecture 9", url:"assets/542003/Ch-9.pdf"}, video:{title:"Video 9",url:"https://youtube.com/..."},exercise:{title:"Exercise 9", url:"assets/542003/ex9.pdf"}},
+            {lecture:{title:"Lecture 10", url:"assets/542003/Ch-10.pdf"}, video:{title:"Video 10",url:"https://youtube.com/..."},exercise:{title:"Exercise 10", url:"assets/542003/ex10.pdf"}}
+            ],
+        extraCard: {title: "📢 Announcement", text: "Midterm Exam : ... August 2026", button: "Schedule", url: "assets/542003/midterm.pdf"}},
 
-        materials: [
-            {title: "Lecture 1", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-1.pdf", target: "_blank"},
-            {title: "Lecture 2", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-2.pdf", target: "_blank"},
-            {title: "Lecture 3", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-3.pdf", target: "_blank"},
-            {title: "Lecture 4", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-4.pdf", target: "_blank"},
-            {title: "Lecture 5", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-5.pdf", target: "_blank"},
-            {title: "Lecture 6", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-6.pdf", target: "_blank"},
-            {title: "Lecture 7", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-7.pdf", target: "_blank"},
-            {title: "Lecture 8", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-8.pdf", target: "_blank"},
-            {title: "Lecture 9", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-9.pdf", target: "_blank"},
-            {title: "Lecture 10", icon: "fa-solid fa-file-pdf", url: "assets/542003/Ch-10.pdf", target: "_blank"},
-            {title: "📚 Learning Material", url: "https://drive.google.com/", target: "_blank"}
-        ]
-    },
+
 
 
     {
-        code: "IN 543003",
-        title: "International Financial",
-        image: "assets/icon/543003.png",
-        password: "002",
-        description:
-            "Lecture Notes, Learning Materials and Assignments.",
+        code: "IN 544002",
+        title: "Derivative Market",
+        image: "assets/icon/544002.png",
+        password: "econ",
+        description: "Lecture Notes, Learning Materials and Assignments.",
+        weeks: [
+            {lecture:{title:"Lecture 1", url:"assets/544002/Ch-1.pdf"}, video:{title:"Video 1",url:"https://youtube.com/..."},exercise:{title:"Exercise 1", url:"assets/544002/ex1.pdf"}},
+            {lecture:{title:"Lecture 2", url:"assets/544002/Ch-2.pdf"}, video:{title:"Video 2",url:"https://youtube.com/..."},exercise:{title:"Exercise 2", url:"assets/544002/ex2.pdf"}},
+            {lecture:{title:"Lecture 3", url:"assets/544002/Ch-3.pdf"}, video:{title:"Video 3",url:"https://youtube.com/..."},exercise:{title:"Exercise 3", url:"assets/544002/ex3.pdf"}},
+            {lecture:{title:"Lecture 4", url:"assets/544002/Ch-4.pdf"}, video:{title:"Video 4",url:"https://youtube.com/..."},exercise:{title:"Exercise 4", url:"assets/544002/ex4.pdf"}},
+            {lecture:{title:"Lecture 5", url:"assets/544002/Ch-5.pdf"}, video:{title:"Video 5",url:"https://youtube.com/..."},exercise:{title:"Exercise 5", url:"assets/544002/ex5.pdf"}},
+            {lecture:{title:"Lecture 6", url:"assets/544002/Ch-6.pdf"}, video:{title:"Video 6",url:"https://youtube.com/..."},exercise:{title:"Exercise 6", url:"assets/544002/ex6.pdf"}},
+            {lecture:{title:"Lecture 7", url:"assets/544002/Ch-7.pdf"}, video:{title:"Video 7",url:"https://youtube.com/..."},exercise:{title:"Exercise 7", url:"assets/544002/ex7.pdf"}},
+            {lecture:{title:"Lecture 8", url:"assets/544002/Ch-8.pdf"}, video:{title:"Video 8",url:"https://youtube.com/..."},exercise:{title:"Exercise 8", url:"assets/544002/ex8.pdf"}},
+            {lecture:{title:"Lecture 9", url:"assets/544002/Ch-9.pdf"}, video:{title:"Video 9",url:"https://youtube.com/..."},exercise:{title:"Exercise 9", url:"assets/544002/ex9.pdf"}},
+            {lecture:{title:"Lecture 10", url:"assets/544002/Ch-10.pdf"}, video:{title:"Video 10",url:"https://youtube.com/..."},exercise:{title:"Exercise 10", url:"assets/544002/ex10.pdf"}}
+            ],
+        extraCard: {title: "📢 Announcement", text: "Midterm Exam : ... August 2026", button: "Schedule", url: "assets/544002/midterm.pdf"}}
 
-        materials: [
-            {title: "Lecture 1", icon: "fa-solid fa-file-pdf", url: "assets/543003/Ch-1.pdf", target: "_blank"},
-            {title: "Lecture 2", icon: "fa-solid fa-file-pdf", url: "assets/543003/Ch-2.pdf", target: "_blank"},
-            {title: "📚 Learning Material", url: "https://drive.google.com/", target: "_blank"}
-        ]
-    },
+
 
 ];
