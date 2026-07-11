@@ -1,17 +1,17 @@
 /* ==========================================
    APP.JS
-   ========================================== */
+========================================== */
 
 const courseContainer = document.getElementById("courseContainer");
 const modalContainer = document.getElementById("modalContainer");
 
+
 /* ==========================================
    CREATE COURSE CARDS
-   ========================================== */
+========================================== */
 
 courses.forEach(course => {
 
-    // สร้าง id ที่ใช้กับ Bootstrap Modal
     const modalId = `modal-${course.code.replace(/\s+/g, "-")}`;
 
     courseContainer.insertAdjacentHTML("beforeend", `
@@ -57,37 +57,175 @@ courses.forEach(course => {
 
 /* ==========================================
    CREATE COURSE MODALS
-   ========================================== */
+========================================== */
 
 courses.forEach(course => {
 
     const modalId = `modal-${course.code.replace(/\s+/g, "-")}`;
 
     let materialHTML = "";
+    let extraCardHTML = "";
 
-    course.materials.forEach(item => {
+
+    /* ======================================
+       TABLE
+    ====================================== */
+
+    if (course.weeks && course.weeks.length > 0) {
+
+        materialHTML = `
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover align-middle text-center">
+
+                <thead class="table-light">
+
+                    <tr>
+                        <th width="35%">Lecture</th>
+                        <th width="35%">Videos</th>
+                        <th width="30%">Exercise</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+        `;
+
+        course.weeks.forEach(w => {
+
+            materialHTML += `
+
+                <tr>
+
+                    <td>
+
+                        ${w.lecture ? `
+
+                        <a
+                            href="${w.lecture.url}"
+                            class="protected-link"
+                            data-password="${course.password}"
+                            target="_blank">
+
+                            <i class="fa-solid fa-file-pdf text-danger"></i>
+
+                            ${w.lecture.title}
+
+                        </a>
+
+                        ` : "-"}
+
+                    </td>
+
+                    <td>
+
+                        ${w.video ? `
+
+                        <a
+                            href="${w.video.url}"
+                            class="protected-link"
+                            data-password="${course.password}"
+                            target="_blank">
+
+                            <i class="fa-solid fa-video text-primary"></i>
+
+                            ${w.video.title}
+
+                        </a>
+
+                        ` : "-"}
+
+                    </td>
+
+                    <td>
+
+                        ${w.exercise ? `
+
+                        <a
+                            href="${w.exercise.url}"
+                            class="protected-link"
+                            data-password="${course.password}"
+                            target="_blank">
+
+                            <i class="fa-solid fa-pen-to-square text-success"></i>
+
+                            ${w.exercise.title}
+
+                        </a>
+
+                        ` : "-"}
+
+                    </td>
+
+                </tr>
+
+            `;
+
+        });
 
         materialHTML += `
 
-            <div class="material-item">
+                </tbody>
+
+            </table>
+
+        </div>
+
+        `;
+
+    }
+
+
+    /* ======================================
+       EXTRA CARD
+    ====================================== */
+
+    if (course.extraCard) {
+
+        extraCardHTML = `
+
+        <div class="card mt-4 shadow-sm border-primary">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+
+                    <i class="${course.extraCard.icon}"></i>
+
+                    ${course.extraCard.title}
+
+                </h5>
+
+                <p class="card-text">
+
+                    ${course.extraCard.text}
+
+                </p>
 
                 <a
-                    href="${item.url}"
-                    class="protected-link"
+                    href="${course.extraCard.url}"
+                    class="btn btn-primary protected-link"
                     data-password="${course.password}"
-                    target="${item.target}">
+                    target="_blank">
 
-                    <i class="${item.icon}"></i>
-
-                    ${item.title}
+                    ${course.extraCard.button}
 
                 </a>
 
             </div>
 
+        </div>
+
         `;
 
-    });
+    }
+
+
+    /* ======================================
+       MODAL
+    ====================================== */
 
     modalContainer.insertAdjacentHTML("beforeend", `
 
@@ -96,7 +234,7 @@ class="modal fade"
 id="${modalId}"
 tabindex="-1">
 
-<div class="modal-dialog">
+<div class="modal-dialog modal-lg modal-dialog-scrollable">
 
 <div class="modal-content">
 
@@ -138,6 +276,8 @@ ${course.description}
 
 ${materialHTML}
 
+${extraCardHTML}
+
 </div>
 
 </div>
@@ -153,7 +293,7 @@ ${materialHTML}
 
 /* ==========================================
    SEARCH COURSE
-   ========================================== */
+========================================== */
 
 document
 .getElementById("searchBox")
@@ -162,21 +302,13 @@ document
     const keyword = this.value.toLowerCase();
 
     document
-    .querySelectorAll(".course-item")
-    .forEach(card => {
+        .querySelectorAll(".course-item")
+        .forEach(card => {
 
-        const text = card.innerText.toLowerCase();
+            const text = card.innerText.toLowerCase();
 
-        if (text.includes(keyword)) {
+            card.style.display = text.includes(keyword) ? "" : "none";
 
-            card.style.display = "";
-
-        } else {
-
-            card.style.display = "none";
-
-        }
-
-    });
+        });
 
 });
