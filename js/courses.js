@@ -31,7 +31,7 @@ const courses = [
         weeks: [
             {lecture:{title:"Lecture 1", url:"assets/542003/Stat-Ch-1.pdf"}, video:{title:"Video 1",url:"https://youtube.com/..."},exercise:{title:"Exercise 1", url:"assets/542003/ex1.pdf"}},
             {lecture:{title:"Lecture 2", url:"assets/542003/Stat-Ch-2.pdf"}, video:{title:"Video 2",url:"https://youtube.com/..."},exercise:{title:"Exercise 2", url:"assets/542003/ex2.pdf"}},
-            {lecture:{title:"Lecture 3", url:"assets/542003/Stat-Ch-3.pdf"}, video:{title:"Note",url"assets/542003/Stat-Ch-3-Note.pdf"},exercise:{title:"Exercise 3", url:"assets/542003/ex3.pdf"}},
+            {lecture:{title:"Lecture 3", url:"assets/542003/Stat-Ch-3.pdf"}, video:{title:"Video 3",url:"assets/542003/Stat-Ch-3-Note.pdf"},exercise:{title:"Exercise 3", url:"assets/542003/ex3.pdf"}},
             {lecture:{title:"Lecture 4", url:"assets/542003/Stat-Ch-4.pdf"}, video:{title:"Video 4",url:"https://youtube.com/..."},exercise:{title:"Exercise 4", url:"assets/542003/ex4.pdf"}},
             {lecture:{title:"Lecture 5", url:"assets/542003/Ch-5.pdf"}, video:{title:"Video 5",url:"https://youtube.com/..."},exercise:{title:"Exercise 5", url:"assets/542003/ex5.pdf"}},
             {lecture:{title:"Lecture 6", url:"assets/542003/Ch-6.pdf"}, video:{title:"Video 6",url:"https://youtube.com/..."},exercise:{title:"Exercise 6", url:"assets/542003/ex6.pdf"}},
