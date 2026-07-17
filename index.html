@@ -1,219 +1,232 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>P. Muenapai</title>
+
 
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/PM.ico" />
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-    <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">P. Muenapai</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            </ul>
+
+
+
+
+
+
+<body>
+
+
+<!-- ================= Navbar ================= -->
+
+<nav class="navbar">
+
+    <div class="nav-brand">
+
+        <img src="assets/logo.png" class="nav-logo">
+
+        <div>
+
+            <h2>Prachya Muenapai</h2>
+
+
         </div>
 
     </div>
 
+    <ul class="nav-menu">
+
+        <li><a href="#home">หน้าแรก</a></li>
+
+        <li><a href="#courses">รายวิชา</a></li>
+
+        <li><a href="#research">ผลงานวิจัย</a></li>
+
+    </ul>
+
 </nav>
 
 
+<!-- ================= Hero ================= -->
+
+<header class="hero" id="home">
+
+    <div class="hero-profile">
+
+        <img src="assets/profile.jpg" class="profile-image">
+
+    </div>
+
+    <div class="hero-info">
+
+        <h1>
+
+            อ.ปรัชญา หมื่นอภัย
+
+        </h1>
+
+        <h3>อาจารย์ประจำหลักสูตรเศรษฐศาสตร์</h3>
 
 
-<!-- Header -->
+        <div class="hero-detail">
 
-<header>
-    
-    <div class="container">
-        <div class="row align-items-center justify-content-between">
+            <p>🏛️ คณะสหวิทยาการ มหาวิทยาลัยขอนแก่น</p>
 
-            <!-- ข้อความ (ขวา) -->
-            <div class="col-lg-7 d-flex flex-column justify-content-center text-center">
-                <h1 >Prachya Muenapai</h1>
-                <hr class="w-25 mx-auto">
-                <p>I am an economist specializing in macroeconomics, monetary policy. 
-                    My goal is to combine academic knowledge in order to 
-                    help students better understand economics in the real world.
-                </p>
+            <p>🕒 Office Hours : จันทร์–ศุกร์ 9.00–16.00 น.</p>
 
-                <div class="mt-4">
-                    <a href="assets/CV.pdf" class="btn btn-outline-secondary" target="_blank">
-                        <i class="fa-download"></i>CV Download!</a>
-                </div>
-
-            </div>
-
-            <!-- รูปภาพ -->
-            <div class="col-lg-5 text-center mb-0 mb-lg-0"><img src="assets/KT.jpg" class="img-fluid rounded hero-image" alt="Profile"></div>
+            <p>📩 pracmu@kku.ac.th</p>
 
         </div>
+
+        <div class="hero-buttons">
+
+            <a href="https://www.facebook.com/kt.kt.393039"
+               target="_blank"
+               class="btn-secondary">
+                📧 CV Download
+            </a>
+
+
+            <a href="https://scholar.google.com/..."
+               target="_blank"
+               class="btn-secondary">
+               🎓 Google Scholar
+            </a>
+
+            <a href="https://orcid.org/..."
+               target="_blank"
+               class="btn-secondary">
+               🆔 ORCID
+            </a>
+
+
+        </div>
+
+
+
+
+
+
     </div>
 
 </header>
 
 
-<!-- Courses -->
-<section id="courses" class="py-5">
-    <div class="container">
 
-        <!-- Search -->
-        <div class="row justify-content-center mb-4 ">
-            <div class="col-md-6">
-                <input type="text" class="form-control" id="searchBox" placeholder="Search Course...">
+
+
+
+
+
+
+
+    <!-- Main -->
+
+    <main class="container" id="courses">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2 class="sidebar-title">
+                รายวิชา
+            </h2>
+
+            <div class="subject" id="macro2Btn">
+                👨‍🎓 เศรษฐศาสตร์มหภาค II
             </div>
-        
-       
 
-        </div>
+            <div class="subject active" id="statisticsBtn">
+                📊 สถิติสำหรับนักเศรษฐศาสตร์
+            </div>
 
-        <!-- Cards -->
-
-        <div class="row g-4" id="courseContainer">
-            <!-- courses.js จะสร้าง Card ตรงนี้ -->
-        </div>
-
-    </div>
-
-</section>
+            <div class="subject" id="futuresBtn">
+                💵 ตลาดซื้อขายอนุพันธ์
+            </div>
 
 
-<!-- About -->
+            <div class="subject" id="financeBtn">
+                💰 การเงินธุรกิจระหว่างประเทศ
+            </div>
 
-<section id="about" class="bg-light py-5">
+            <div class="subject" id="econometricsBtn">
+                📈 เศรษฐศาสตร์การเงินสมัยใหม่
+            </div>
 
-    <div class="container">        
-        <div class="text-center">
-            <p class="lead text-danger"><strong>เอกสารประกอบการเรียน ห้ามคัดลอกหรือนำไปเผยแพร่ต่อก่อนได้รับอนุญาต</strong></p>
-        </div>
-    </div>
+            <div class="subject" id="accountingBtn">
+                📒 สัมมนาทางเศรษฐศาสตร์
+            </div>
 
-</section>
+        </aside>
 
+        <!-- Content -->
 
-<!-- Footer -->
+        <section class="content">
 
-<footer class="bg-dark text-white py-4">
-
-    <div class="container text-center">
-        © 2026 Learning Materials
-    </div>
-
-</footer>
-
-
-<!-- Modal จะถูกสร้างอัตโนมัติ -->
-
-<div id="modalContainer"></div>
-
-
-<!-- Password Modal -->
-
-<div class="modal fade" id="passwordModal" tabindex="-1">
-
-    <div class="modal-dialog modal-dialog-centered">
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-
-                <h5 class="modal-title">
-
-                    <i class="fa-solid fa-lock"></i>
-                    กรุณาใส่รหัสผ่าน
-
-                </h5>
-
-                <button class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
+            <div id="contentArea">
 
             </div>
 
-            <div class="modal-body">
+        </section>
 
-                <input
-                    id="passwordInput"
-                    class="form-control"
-                    type="password"
-                    placeholder="Password">
-
-                <div
-                    id="passwordError"
-                    class="text-danger mt-2 d-none">
-
-                    รหัสผ่านไม่ถูกต้อง
-
-                </div>
-
-            </div>
-
-            <div class="modal-footer">
-
-                <button
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal">
-
-                    Cancel
-
-                </button>
-
-                <button
-                    class="btn btn-primary"
-                    id="passwordSubmit">
-
-                    Confirm
-
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
+    </main>
 
 
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Data -->
-<script src="js/courses.js"></script>
 
-<!-- Main -->
-<script src="js/app.js"></script>
 
-<!-- Password -->
-<script src="js/password.js"></script>
+
+
+
+    <!-- Subject Pages -->
+         <script src="subjects/pages.js"></script>
+
+    <script src="subjects/macro2.js"></script>
+    <script src="subjects/statistics.js"></script>
+    <script src="subjects/futures.js"></script>
+    <script src="subjects/finance.js"></script>
+    <script src="subjects/econometrics.js"></script>
+    <script src="subjects/accounting.js"></script>
+
+    <!-- App -->
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>
