@@ -93,15 +93,16 @@ pages.macro2 = {
                 </tr>
 
                 <tr>
-                    <td>บทที่ 2 อุปทานมวรวม (1)</td>
+                    <td>บทที่ 2 อุปทานมวรวม</td>
 
-                    <td><a href="https://drive.google.com/file/d/1c5s53npEure-EiS1sdEp75Ymqmx3RlLI/view?usp=sharing" 
+                    <td><a href="https://drive.google.com/file/d/18WGFAFbAjIjKqfMhgAqtbE9EoDZOEu6P/view?usp=sharing" 
 			        target="_blank" class="lesson-btn">Lesson 2</a></td>
-
-                    <td></td>
 
                     <td><a href="https://drive.google.com/file/d/1c_0fVtx4mlcM_ov5UwK50pxzuHtV7Eih/view?usp=sharing" 
                     target="_blank" class="lesson-btn exercise">การบ้าน 1</a></td>
+
+                    <td></td>
+
                 </tr>
 
               
