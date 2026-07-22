@@ -126,6 +126,15 @@ pages.statistics = {
                     target="_blank" class="lesson-btn exercise">การบ้าน 1</a></td>
                 </tr>
 
+                    <td>บทที่ 5 ตัวแปรสุ่ม</td>
+
+                    <td><a href="https://drive.google.com/file/d/1SZXeykePI1QCF5mguYayFU4DY0Y1Pek1/view?usp=drive_link" 
+                    target="_blank" class="lesson-btn">Lesson 4</a></td>
+
+                    <td></td>
+
+                    <td></td>
+                </tr>
 
 
             </tbody>
