@@ -133,7 +133,8 @@ pages.statistics = {
 
                     <td></td>
 
-                    <td></td>
+                    <td><a href="https://drive.google.com/file/d/1xM_pfWrspRFFYeiU_wTL9KEx91-XlWsp/view?usp=sharing" 
+                    target="_blank" class="lesson-btn exercise">การบ้าน 2</a></td>
                 </tr>
 
 
