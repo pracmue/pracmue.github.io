@@ -43,7 +43,7 @@ pages.futures = {
 
     <div class="course-links">
 
-        <a href="https://forms.google.com/..."
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYsDTjg6auXa4aIrZOKrdwFcoWbDiv_duV42j2U3ERNdvnQQ/viewform?usp=publish-editor"
            target="_blank" class="btn-secondary">
             📂 ส่งการบ้าน
         </a>
@@ -82,37 +82,63 @@ pages.futures = {
             <tbody>
 
                 <tr>
-                    <td>บทที่ 1 บทนำ</td>
+                    <td>บทที่ 1 ความรู้เบื้องต้นตราสาร</td>
 
-                    <td>
-                        <a href="https://drive.google.com/file/d/1JEhfoVV4LptrQIw3PehYFduAjEbR2rgT/view?usp=drive_link"
-                           target="_blank" class="lesson-btn">
-                            Open
-                        </a>
+                    <td><a href="https://drive.google.com/file/d/1hJmgd9vasWoozjpLPHMLdBIR5w4qpRBs/view?usp=sharing"
+					       target="_blank" class="lesson-btn">Lesson 1</a></td>
                     </td>
 
                     <td>
-
-                    </td>
+					</td>
 
                     <td>
-                        <a href="https://example.com/exercise1.pdf"
-                           target="_blank" class="lesson-btn exercise">
-                            PDF
-                        </a>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>บทที่ 2 ตราสารตลาดอนุพันธ์เบื้องต้น</td>
+                    <td>บทที่ 2 บทบาทตลาดซื้อขายล่วงหน้า</td>
 
-                    <td><a href="https://drive.google.com/file/d/1FvFq7hB87JOBYHPgmDYpF-FP18FRrkk_/view?usp=drive_link" 
-			target="_blank" class="lesson-btn">Open</a></td>
-                    <td><a href="#" class="lesson-btn video">Video</a></td>
-                    <td><a href="#" class="lesson-btn exercise">PDF</a></td>
+                    <td><a href="https://drive.google.com/file/d/13MjdwGkM8nrvIj8DMDxsZT0vukdw_2wO/view?usp=sharing" 
+					       target="_blank" class="lesson-btn">Lesson 2</a></td>
+					
+                    <td>
+					</td>
+					
+                    <td>
+					</td>
                 </tr>
 
-              
+
+                <tr>
+                    <td>บทที่ 3 อัตราดอกเบี้ย</td>
+
+                    <td><a href="https://drive.google.com/file/d/1ibzs71q-WizyeZIFD_48CcBNlvYXvMMz/view?usp=sharing" 
+					       target="_blank" class="lesson-btn">Lesson 3</a>
+					</td>
+					
+                    <td></td>
+					
+                    <td><a href="https://drive.google.com/file/d/18SmXJrz5AtFXUUSjPQ0ScYjT_9fARLpn/view?usp=sharing"
+                           target="_blank" class="lesson-btn exercise">HW1</a>
+                    </td>
+					
+                </tr>
+
+
+                <tr>
+                    <td>บทที่ 4 การกำหนดราคาฟิวเจอร์ส</td>
+
+                    <td><a href="https://drive.google.com/file/d/1XX5lj21luAHIYSXoKv_jPBbGFdpFLzVR/view?usp=sharing" 
+					       target="_blank" class="lesson-btn">Lesson 4</a>
+					</td>
+					
+                    <td></td>
+					
+                    <td><a href="https://drive.google.com/file/d/1yCe8aLTamgypHjXiwj52zDtdHYJVZaL5/view?usp=sharing"
+                           target="_blank" class="lesson-btn exercise">HW2</a>
+                    </td>
+					
+                </tr>
 
             </tbody>
 
