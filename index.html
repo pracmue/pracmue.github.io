@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>P. Muenapai</title>
+
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/PM.ico" />
+
+
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            }
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+<!-- ================= Navbar ================= -->
+
+<nav class="navbar">
+
+    <div class="nav-brand">
+
+        <img src="assets/logo.png" class="nav-logo">
+
+        <div>
+
+            <h2>Prachya Muenapai</h2>
+
+
+        </div>
+
+    </div>
+
+    <ul class="nav-menu">
+
+        <li><a href="#home">หน้าแรก</a></li>
+
+        <li><a href="#courses">รายวิชา</a></li>
+
+        <li><a href="#research">ผลงานวิจัย</a></li>
+
+    </ul>
+
+</nav>
+
+
+<!-- ================= Hero ================= -->
+
+<header class="hero" id="home">
+
+    <div class="hero-profile">
+
+        <img src="assets/profile.jpg" class="profile-image">
+
+    </div>
+
+    <div class="hero-info">
+
+        <h1>
+
+            อ.ปรัชญา หมื่นอภัย
+
+        </h1>
+
+        <h3>อาจารย์ประจำหลักสูตรเศรษฐศาสตร์</h3>
+
+
+        <div class="hero-detail">
+
+            <p>🏛️ คณะสหวิทยาการ มหาวิทยาลัยขอนแก่น</p>
+
+            <p>🕒 Office Hours : จันทร์–ศุกร์ 9.00–16.00 น.</p>
+
+            <p>📩 pracmu@kku.ac.th</p>
+
+            <p>🆔 ORCID: 0009-0000-0072-8753</p>
+
+        </div>
+
+        <div class="hero-buttons">
+
+            <a href="https://drive.google.com/file/d/1WrWoz36za-JI7FxvBWx0lLWXUdpuKTA2/view?usp=sharing"
+               target="_blank"
+               class="btn-secondary">
+                📧 CV Download
+            </a>
+
+
+            <a href="https://scholar.google.com/citations?user=MjrARnAAAAAJ&hl=th"
+               target="_blank"
+               class="btn-secondary">
+               🎓 Google Scholar
+            </a>
+
+            <a href="https://orcid.org/0009-0000-0072-8753"
+               target="_blank"
+               class="btn-secondary">
+               🆔 ORCID
+            </a>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
+    <!-- Main -->
+
+    <main class="container" id="courses">
+
+        <!-- Course Cards -->
+        <section class="course-section">
+            <h2 class="course-section-title">รายวิชา</h2>
+            <div class="course-grid" id="courseGrid">
+                <button class="course-card" id="macro2Btn" type="button" data-course="macro2">
+                    <img src="assets/icon/542002.png" alt="Macroeconomics II icon">
+                    <h3>IN 542002</h3><p>Macroeconomics II</p>
+                </button>
+                <button class="course-card" id="statisticsBtn" type="button" data-course="statistics">
+                    <img src="assets/icon/542003.png" alt="Statistics icon">
+                    <h3>IN 542003</h3><p>Introduction to Statistics for Economists</p>
+                </button>
+                <button class="course-card" id="financeBtn" type="button" data-course="finance">
+                    <img src="assets/icon/543003.png" alt="International Financial Business icon">
+                    <h3>IN 543003</h3><p>International Financial Business</p>
+                </button>
+                <button class="course-card" id="econometricsBtn" type="button" data-course="econometrics">
+                    <img src="assets/icon/544002.png" alt="Modern Monetary Economics icon">
+                    <h3>IN 544002</h3><p>Modern Monetary Economics</p>
+                </button>
+                <button class="course-card" id="futuresBtn" type="button" data-course="futures">
+                    <img src="assets/icon/544005.png" alt="Derivative Market icon">
+                    <h3>IN 544005</h3><p>Derivative Market</p>
+                </button>
+                <button class="course-card" id="accountingBtn" type="button" data-course="accounting">
+                    <img src="assets/icon/544761.png" alt="Economics Seminar icon">
+                    <h3>IN 544761</h3><p>International Economics Seminar</p>
+                </button>
+            </div>
+            <div class="course-content-area" id="contentArea"></div>
+        </section>
+
+    </main>
+
+    <!-- ================= Research Publications ================= -->
+    <section class="research-section" id="research">
+        <div class="research-container">
+            <div class="research-heading">
+                <h2>Research Publications</h2>
+                <p>งานวิจัยและผลงานทางวิชาการ</p>
+            </div>
+            <div class="research-table-wrap">
+                <table class="research-table">
+                    <thead>
+                        <tr><th>ปี</th><th>ชื่อผลงาน</th><th>วารสาร / การประชุม</th><th>เอกสาร</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025</td>
+                            <td>Impact of soft power on number of tourists in the post-COVID-19 era.</td>
+                            <td>Proceedings of the Second International Conference on Social Sciences (ICSS-II)</td>
+                            <td><a href="https://doi.org/10.xxxx/xxxxx" target="_blank" rel="noopener noreferrer" class="publication-link">DOI ↗</a></td>
+                        </tr>
+                        <tr>
+                            <td>2568</td>
+                            <td>การจัดการการขนส่งสินค้าทางบกจากไทยไปมณฑลยูนาน โดยผ่านสาธารณรัฐประชาธิปไตยประชาชนลาว</td>
+                            <td>RUS Global Business and Economics National and International Conference</td>
+                            <td><a href="paper01.pdf" target="_blank" rel="noopener noreferrer" class="publication-link">PDF ↓</a></td>
+                        </tr>
+                        <tr>
+                            <td>2566</td>
+                            <td>การวิเคราะห์โอกาสและความเป็นไปได้ในการร่วมลงทุนระหว่างประเทศไทย กับประเทศ สปป.ลาวและประเทศจีน กรณีศึกษาอุตสาหกรรมปาล์มน้ำมัน</td>
+                            <td>ผลงานวิจัย</td>
+                            <td><a href="https://doi.org/xxxxxxxx" target="_blank" rel="noopener noreferrer" class="publication-link">DOI ↗</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Subject Pages -->
+         <script src="subjects/pages.js"></script>
+
+    <script src="subjects/macro2.js"></script>
+    <script src="subjects/statistics.js"></script>
+    <script src="subjects/futures.js"></script>
+    <script src="subjects/finance.js"></script>
+    <script src="subjects/econometrics.js"></script>
+    <script src="subjects/accounting.js"></script>
+
+    <!-- App -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
